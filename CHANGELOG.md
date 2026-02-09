@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.6] - 2025-12-01
+### Added
+- `/whois <target>` command
+
+## [1.4.5] - 2025-11-15
+### Added
+- Simple `/repair` command
+
 ## [1.4.4] - 2025-05-23
 ### Changed
 - Use stonecutter to support 1.21.1, 1.21.4 and 1.21.5

@@ -86,6 +86,10 @@
   "fabric-essentials.commands.ping.self": "<yellow>Pong! Your connection latency to the server is %player:ping_colored%<yellow>ms!",
   "fabric-essentials.commands.ping.other": "<yellow>Pong! %player:displayname%'s connection latency to the server is %player:ping_colored%<yellow>ms!",
 
+  "fabric-essentials.commands.repair": "<yellow>Successfully repaired the item in your hand.",
+  "fabric-essentials.commands.repair.all": "<yellow>Successfully repaired all items in your inventory.",
+  "fabric-essentials.commands.repair.missing": "<red>You need to hold a broken item to use this command!",
+
   "fabric-essentials.commands.sethome.self": "<yellow>Set the home <gold>${home_name}<yellow>!",
   "fabric-essentials.commands.sethome.other": "<yellow>Set the home <gold>${home_name} <yellow>for <gold>%player:displayname%<yellow>!",
   "fabric-essentials.commands.sethome.limit": "<red>Home limited reached! You can't set any more homes!",
@@ -126,6 +130,8 @@
   "fabric-essentials.commands.warps.empty": "<red>There aren't any warps!",
   "fabric-essentials.commands.warps.list.separator": "<gray>, </gray>",
   "fabric-essentials.commands.warps.list.element": "<hover:show_text:'<gray>Pos: <white>${location_pos_x} ${location_pos_y} ${location_pos_z}\n<gray>World: <white>${location_dimension}\n<aqua>Click to teleport!'><run_cmd:'/warp ${warp_name}'><yellow>${warp_name}",
+
+  "fabric-essentials.commands.whois": "<gold><bold>Whois %player:name%</bold></gold>\n<gold>Display Name:</gold> <yellow>%player:displayname%</yellow>\n<gold>UUID:</gold> <yellow><hover show_text '<aqua>Click to copy!'><click copy_to_clipboard '%player:uuid%'>%player:uuid%</click></hover></yellow>\n<gold>Position:</gold> <hover show_text '<aqua>Click to teleport!'><click run_command '/execute in %world:id% run tp @s %player:pos_x% %player:pos_y% %player:pos_z%'><yellow>%player:pos_x% %player:pos_y% %player:pos_z%</yellow> <gold>in</gold> <yellow>%world:id%</yellow></click></hover>\n<gold>Playtime:</gold> <yellow>%player:playtime%</yellow>",
 
   "fabric-essentials.commandspy": "<dark_gray>[<light_purple>CommandSpy<dark_gray>] <dark_gray>[<reset>%player:displayname%<dark_gray>] <hover:show_text:'Click to copy!'><click:copy_to_clipboard:'/${command}'><gray>/${command}",
 
