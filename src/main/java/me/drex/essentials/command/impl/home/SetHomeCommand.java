@@ -14,6 +14,7 @@ import me.drex.essentials.storage.PlayerData;
 import me.drex.essentials.util.teleportation.Home;
 import me.drex.essentials.util.teleportation.Location;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.permissions.Permissions;
 import net.minecraft.world.level.Level;
 
 import java.util.Map;
@@ -54,7 +55,7 @@ public class SetHomeCommand extends Command {
     }
 
     protected int setHome(CommandSourceStack src, String name, GameProfile target, boolean self, boolean confirm) {
-        if (!src.getLevel().dimension().equals(Level.OVERWORLD) && !src.getLevel().dimension().equals(Level.NETHER) && !src.getLevel().dimension().equals(Level.END) && !src.hasPermission(4)){
+        if (!src.getLevel().dimension().equals(Level.OVERWORLD) && !src.getLevel().dimension().equals(Level.NETHER) && !src.getLevel().dimension().equals(Level.END) && !src.permissions().hasPermission(Permissions.COMMANDS_OWNER)){
             src.sendFailure(Component.nullToEmpty("您無法在此維度建立 Home點"));
             return FAILURE;
         }
